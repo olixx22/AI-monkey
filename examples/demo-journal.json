@@ -1,0 +1,372 @@
+{
+  "description": "Actual fake-model / real-Docker run, paused after experiment 1 and resumed.",
+  "run_id": "run_6c391d93eed9",
+  "status": "verified",
+  "budget_used": {
+    "actions": 4,
+    "experiments": 2,
+    "model_calls": 16
+  },
+  "events": [
+    {
+      "id": "event_a0c5961e4d74",
+      "details": {
+        "category": "crypto",
+        "materials": 1
+      },
+      "event": "created",
+      "time": 1794925065.8073258
+    },
+    {
+      "id": "event_1021d6d8afef",
+      "details": {},
+      "event": "recovered",
+      "time": 1794925065.80862
+    },
+    {
+      "id": "event_1155be281db4",
+      "details": {
+        "observation": "obs_6b75d37bb8fa",
+        "path": "originals/cipher.hex"
+      },
+      "event": "material_inspected",
+      "time": 1794925065.810116
+    },
+    {
+      "id": "event_ec83a33acda7",
+      "details": {
+        "category": "crypto",
+        "hypothesis": "The hex-decoded bytes use XOR key 0.",
+        "id": "hyp_d3014f784114"
+      },
+      "event": "hypothesis_created",
+      "time": 1794925065.811931
+    },
+    {
+      "id": "event_fdc6edfed444",
+      "details": {
+        "hypothesis": "hyp_d3014f784114",
+        "id": "exp_d07ddf74827b"
+      },
+      "event": "experiment_started",
+      "time": 1794925065.813191
+    },
+    {
+      "id": "event_898104755875",
+      "details": {
+        "hypothesis_status": "rejected",
+        "id": "exp_d07ddf74827b",
+        "p": {
+          "crypto": 0.7974683544303798,
+          "forensics": 0.04050632911392405,
+          "misc": 0.04050632911392405,
+          "pwn": 0.04050632911392405,
+          "reverse": 0.04050632911392405,
+          "web": 0.04050632911392405
+        },
+        "signal": "negative"
+      },
+      "event": "experiment_completed",
+      "time": 1794925066.071896
+    },
+    {
+      "id": "event_3ed4aa81b757",
+      "details": {},
+      "event": "paused_after_experiment",
+      "time": 1794925066.07327
+    },
+    {
+      "id": "event_ceabcb1afa47",
+      "details": {},
+      "event": "recovered",
+      "time": 1794925075.860706
+    },
+    {
+      "id": "event_8b8d196574f8",
+      "details": {
+        "category": "crypto",
+        "hypothesis": "A single-byte XOR key in 1..255 reveals a flag.",
+        "id": "hyp_b540b1acd2c2"
+      },
+      "event": "hypothesis_created",
+      "time": 1794925075.8631501
+    },
+    {
+      "id": "event_71558f11d2c3",
+      "details": {
+        "hypothesis": "hyp_b540b1acd2c2",
+        "id": "exp_32acd04dd7a0"
+      },
+      "event": "experiment_started",
+      "time": 1794925075.864488
+    },
+    {
+      "id": "event_82fcd3fb4746",
+      "details": {
+        "hypothesis_status": "confirmed",
+        "id": "exp_32acd04dd7a0",
+        "p": {
+          "crypto": 0.8072289156626506,
+          "forensics": 0.038554216867469876,
+          "misc": 0.038554216867469876,
+          "pwn": 0.038554216867469876,
+          "reverse": 0.038554216867469876,
+          "web": 0.038554216867469876
+        },
+        "signal": "positive"
+      },
+      "event": "experiment_completed",
+      "time": 1794925076.1180868
+    },
+    {
+      "id": "event_818ee7282d6c",
+      "details": {
+        "reason": "Recovered a flag candidate; program verification decides success.",
+        "status": "verified"
+      },
+      "event": "finished",
+      "time": 1794925076.120385
+    }
+  ],
+  "vectors": [
+    {
+      "id": "vector_e5643771eb15",
+      "changes": [],
+      "p": {
+        "crypto": 0.8,
+        "forensics": 0.04,
+        "misc": 0.04,
+        "pwn": 0.04,
+        "reverse": 0.04,
+        "web": 0.04
+      },
+      "reason": "user_category",
+      "u": {
+        "crypto": 0.8,
+        "forensics": 0.04,
+        "misc": 0.04,
+        "pwn": 0.04,
+        "reverse": 0.04,
+        "web": 0.04
+      }
+    },
+    {
+      "id": "vector_1ecd9b324906",
+      "applied_delta": {
+        "crypto": -0.05,
+        "forensics": 0.0,
+        "misc": 0.0,
+        "pwn": 0.0,
+        "reverse": 0.0,
+        "web": 0.0
+      },
+      "changes": [
+        {
+          "category": "crypto",
+          "delta": -0.05,
+          "evidence": [
+            "logs/tool_1f9c36ed001f.log"
+          ],
+          "reason": "Bounded XOR test returned the recorded signal."
+        }
+      ],
+      "p": {
+        "crypto": 0.7974683544303798,
+        "forensics": 0.04050632911392405,
+        "misc": 0.04050632911392405,
+        "pwn": 0.04050632911392405,
+        "reverse": 0.04050632911392405,
+        "web": 0.04050632911392405
+      },
+      "reason": "exp_d07ddf74827b",
+      "u": {
+        "crypto": 0.7875000000000001,
+        "forensics": 0.04,
+        "misc": 0.04,
+        "pwn": 0.04,
+        "reverse": 0.04,
+        "web": 0.04
+      }
+    },
+    {
+      "id": "vector_3b925dd98b41",
+      "applied_delta": {
+        "crypto": 0.2,
+        "forensics": 0.0,
+        "misc": 0.0,
+        "pwn": 0.0,
+        "reverse": 0.0,
+        "web": 0.0
+      },
+      "changes": [
+        {
+          "category": "crypto",
+          "delta": 0.2,
+          "evidence": [
+            "logs/tool_cafe3030a2a5.log"
+          ],
+          "reason": "Bounded XOR test returned the recorded signal."
+        }
+      ],
+      "p": {
+        "crypto": 0.8072289156626506,
+        "forensics": 0.038554216867469876,
+        "misc": 0.038554216867469876,
+        "pwn": 0.038554216867469876,
+        "reverse": 0.038554216867469876,
+        "web": 0.038554216867469876
+      },
+      "reason": "exp_32acd04dd7a0",
+      "u": {
+        "crypto": 0.8375000000000001,
+        "forensics": 0.04,
+        "misc": 0.04,
+        "pwn": 0.04,
+        "reverse": 0.04,
+        "web": 0.04
+      }
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hyp_d3014f784114",
+      "alternatives": [
+        "Repeating-key XOR or a non-XOR construction."
+      ],
+      "attempts": 1,
+      "attempts_since_data": 1,
+      "category": "crypto",
+      "created_version": 0,
+      "evidence": [
+        "obs_6b75d37bb8fa"
+      ],
+      "experiment": {
+        "constraints": [
+          "Local ciphertext only; no network; bounded key search."
+        ],
+        "inputs": [
+          "originals/cipher.hex"
+        ],
+        "negative_signal": "The tested key space produces no flag candidate.",
+        "positive_signal": "A printable flag{...} string appears.",
+        "procedure": "xor-key-zero-v1",
+        "uninformative_if": [
+          "Read error, process timeout or malformed ciphertext."
+        ]
+      },
+      "experiments": [
+        "exp_d07ddf74827b"
+      ],
+      "hypothesis": "The hex-decoded bytes use XOR key 0.",
+      "local_priority": 0.9,
+      "object_id": "originals/cipher.hex",
+      "resume_when": "New ciphertext or new evidence about the encoding.",
+      "status": "rejected",
+      "uninformative": 0
+    },
+    {
+      "id": "hyp_b540b1acd2c2",
+      "alternatives": [
+        "Repeating-key XOR or a non-XOR construction."
+      ],
+      "attempts": 1,
+      "attempts_since_data": 1,
+      "category": "crypto",
+      "created_version": 0,
+      "evidence": [
+        "obs_4742a5696382"
+      ],
+      "experiment": {
+        "constraints": [
+          "Local ciphertext only; no network; bounded key search."
+        ],
+        "inputs": [
+          "originals/cipher.hex"
+        ],
+        "negative_signal": "The tested key space produces no flag candidate.",
+        "positive_signal": "A printable flag{...} string appears.",
+        "procedure": "xor-bruteforce-v1",
+        "uninformative_if": [
+          "Read error, process timeout or malformed ciphertext."
+        ]
+      },
+      "experiments": [
+        "exp_32acd04dd7a0"
+      ],
+      "hypothesis": "A single-byte XOR key in 1..255 reveals a flag.",
+      "local_priority": 0.9,
+      "object_id": "originals/cipher.hex",
+      "resume_when": "New ciphertext or new evidence about the encoding.",
+      "status": "confirmed",
+      "uninformative": 0
+    }
+  ],
+  "reports": [
+    {
+      "artifacts": [
+        "artifacts/exp_d07ddf74827b/tool_1f9c36ed001f/solve.py"
+      ],
+      "changes": [
+        {
+          "category": "crypto",
+          "delta": -0.05,
+          "evidence": [
+            "logs/tool_1f9c36ed001f.log"
+          ],
+          "reason": "Bounded XOR test returned the recorded signal."
+        }
+      ],
+      "experiment_id": "exp_d07ddf74827b",
+      "hypothesis_id": "hyp_d3014f784114",
+      "next_step": "Try a different key space.",
+      "observations": [
+        {
+          "sources": [
+            "logs/tool_1f9c36ed001f.log"
+          ],
+          "text": "NO_CANDIDATE\n"
+        }
+      ],
+      "signal": "negative",
+      "status": "informative"
+    },
+    {
+      "artifacts": [
+        "artifacts/exp_32acd04dd7a0/tool_cafe3030a2a5/solve.py"
+      ],
+      "changes": [
+        {
+          "category": "crypto",
+          "delta": 0.2,
+          "evidence": [
+            "logs/tool_cafe3030a2a5.log"
+          ],
+          "reason": "Bounded XOR test returned the recorded signal."
+        }
+      ],
+      "experiment_id": "exp_32acd04dd7a0",
+      "hypothesis_id": "hyp_b540b1acd2c2",
+      "next_step": "Verify the candidate.",
+      "observations": [
+        {
+          "sources": [
+            "logs/tool_cafe3030a2a5.log"
+          ],
+          "text": "flag{separate_roles_real_experiments}\n"
+        }
+      ],
+      "signal": "positive",
+      "status": "informative"
+    }
+  ],
+  "checks": [
+    {
+      "candidate": "flag{separate_roles_real_experiments}",
+      "criterion": "user_supplied_sha256",
+      "id": "check_af8333160ad8",
+      "source": "logs/tool_cafe3030a2a5.log",
+      "status": "verified",
+      "verified": true
+    }
+  ]
+}

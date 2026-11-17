@@ -1,0 +1,7 @@
+{
+  "provider": "tsuev",
+  "repository": "https://github.com/Tsuev/opencode-deepseek",
+  "revision": "2e3c81d7ea47a5fabb5aa7fa2a4f45cf681981c9",
+  "protocol": "POST /v1/chat/completions, non-streaming text JSON, explicit conversation_id",
+  "native_tool_calling": false
+}

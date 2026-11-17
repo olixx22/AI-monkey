@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctf-agent-mvp"
+version = "0.1.0"
+description = "Sequential, resumable CTF research agent with a Docker runner"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+ctf-agent = "ctf_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ctf_agent*"]

@@ -1,0 +1,42 @@
+test_bridge_explicit_sessions_and_no_native_tools (tests.test_core.AdapterTests.test_bridge_explicit_sessions_and_no_native_tools) ... ok
+test_gemini_exact_model_and_no_secret_body (tests.test_core.AdapterTests.test_gemini_exact_model_and_no_secret_body) ... ok
+test_http_status_mapping_without_retry (tests.test_core.AdapterTests.test_http_status_mapping_without_retry) ... ok
+test_experiment_finalization_rolls_back_as_a_unit (tests.test_core.CrashBoundaryTests.test_experiment_finalization_rolls_back_as_a_unit) ... ok
+test_known_credentials_redacted_from_model_response_file (tests.test_core.CrashBoundaryTests.test_known_credentials_redacted_from_model_response_file) ... ok
+test_report_cannot_turn_failed_tool_into_negative_evidence (tests.test_core.CrashBoundaryTests.test_report_cannot_turn_failed_tool_into_negative_evidence) ... ok
+test_branch_suspends_at_uninformative_limit (tests.test_core.EngineTests.test_branch_suspends_at_uninformative_limit) ... ok
+test_budget_stops_calls (tests.test_core.EngineTests.test_budget_stops_calls) ... ok
+test_candidate_is_not_success_without_criterion (tests.test_core.EngineTests.test_candidate_is_not_success_without_criterion) ... ok
+test_connection_error_is_neutral (tests.test_core.EngineTests.test_connection_error_is_neutral) ... ok
+test_crypto_rejects_web_branch_without_evidence (tests.test_core.EngineTests.test_crypto_rejects_web_branch_without_evidence) ... ok
+test_full_vertical_cycle_and_no_web (tests.test_core.EngineTests.test_full_vertical_cycle_and_no_web) ... ok
+test_identical_experiment_blocked_despite_vector_change (tests.test_core.EngineTests.test_identical_experiment_blocked_despite_vector_change) ... ok
+test_invalid_model_json_blocks_and_saves (tests.test_core.EngineTests.test_invalid_model_json_blocks_and_saves) ... ok
+test_model_selects_initial_direction_when_unknown (tests.test_core.EngineTests.test_model_selects_initial_direction_when_unknown) ... ok
+test_new_related_data_resumes_suspended_branch (tests.test_core.EngineTests.test_new_related_data_resumes_suspended_branch) ... ok
+test_nonexistent_evidence_is_rejected (tests.test_core.EngineTests.test_nonexistent_evidence_is_rejected) ... ok
+test_originals_unchanged_and_integrity_checked (tests.test_core.EngineTests.test_originals_unchanged_and_integrity_checked) ... ok
+test_path_traversal_and_symlinks (tests.test_core.EngineTests.test_path_traversal_and_symlinks) ... ok
+test_resume_after_command_before_report (tests.test_core.EngineTests.test_resume_after_command_before_report) ... ok
+test_resume_does_not_reexecute (tests.test_core.EngineTests.test_resume_does_not_reexecute) ... ok
+test_second_active_engine_is_rejected (tests.test_core.EngineTests.test_second_active_engine_is_rejected) ... ok
+test_uncertain_side_effect_not_replayed (tests.test_core.EngineTests.test_uncertain_side_effect_not_replayed) ... ok
+test_wrong_criterion_does_not_verify (tests.test_core.EngineTests.test_wrong_criterion_does_not_verify) ... ok
+test_bad_json (tests.test_core.ProtocolTests.test_bad_json) ... ok
+test_configuration_validation (tests.test_core.ProtocolTests.test_configuration_validation) ... ok
+test_decision_payload_validated (tests.test_core.ProtocolTests.test_decision_payload_validated) ... ok
+test_unknown_actions_and_fields (tests.test_core.ProtocolTests.test_unknown_actions_and_fields) ... ok
+test_vector_normalizes_clips_and_restores (tests.test_core.ProtocolTests.test_vector_normalizes_clips_and_restores) ... ok
+test_command_hardening_and_network_allowlist (tests.test_core.RunnerPolicyTests.test_command_hardening_and_network_allowlist) ... ok
+test_written_script_source_can_be_cited (tests.test_core.SourceReferenceTests.test_written_script_source_can_be_cited) ... ok
+test_http_broker_exact_target_and_no_redirect (tests.test_docker.DockerTests.test_http_broker_exact_target_and_no_redirect) ... ok
+test_nonroot_readonly_originals_and_no_network_route (tests.test_docker.DockerTests.test_nonroot_readonly_originals_and_no_network_route) ... ok
+test_output_preview_separate_from_full_log_and_limit (tests.test_docker.DockerTests.test_output_preview_separate_from_full_log_and_limit) ... ok
+test_real_candidate_remains_unverified_without_criterion (tests.test_docker.DockerTests.test_real_candidate_remains_unverified_without_criterion) ... ok
+test_real_demo_resume_and_candidate_verification (tests.test_docker.DockerTests.test_real_demo_resume_and_candidate_verification) ... ok
+test_timeout_kills_container (tests.test_docker.DockerTests.test_timeout_kills_container) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 3.617s
+
+OK
